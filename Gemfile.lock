@@ -61,6 +61,9 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
+    minitest-rails (3.0.0)
+      minitest (~> 5.8)
+      railties (~> 5.0)
     nio4r (2.0.0)
     nokogiri (1.7.1)
       mini_portile2 (~> 2.1.0)
@@ -106,13 +109,17 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    with_model (2.0.0)
+      activerecord (>= 4.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   filta!
+  minitest-rails (~> 3.0.0)
   sqlite3
+  with_model (~> 2.0.0)
 
 BUNDLED WITH
    1.14.6

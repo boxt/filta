@@ -1,3 +1,9 @@
+require "filta/methods"
+
 module Filta
-  # Your code goes here...
+
+  ActiveSupport.on_load(:active_record) do
+    include Filta::Methods
+  end
+
 end
