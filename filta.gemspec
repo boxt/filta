@@ -14,8 +14,8 @@ Gem::Specification.new do |s|
   s.description = "Super simple filtering for ActiveRecord, inspired by Justin Weiss' Gist - https://gist.github.com/justinweiss/9065666"
   s.license     = "MIT"
 
-  s.files = Dir["
-    {app, config, db, lib}/**/*",
+  s.files = Dir[
+    "lib/**/*",
     "MIT-LICENSE",
     "Rakefile",
     "README.md"
