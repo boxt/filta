@@ -8,6 +8,7 @@ Super simple filtering for ActiveRecord, inspired by [Justin Weiss' Gist](https:
 - [Installation](#installation)
 - [Contributing](#contributing)
 - [License](#license)
+- [TODO](#todo)
 
 <!-- /MarkdownTOC -->
 
@@ -49,3 +50,7 @@ $ gem install filta
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+## TODO
+
+* Finish README

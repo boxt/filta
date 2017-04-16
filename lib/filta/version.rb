@@ -1,3 +1,3 @@
 module Filta
-  VERSION = '0.1.0'
+  VERSION = File.read("VERSION").split("\n").first
 end
