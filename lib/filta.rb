@@ -1,3 +1,3 @@
-module ArSimpleFilter
+module Filta
   # Your code goes here...
 end

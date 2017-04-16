@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :ar_simple_filter do
+# task :filta do
 #   # Task goes here
 # end
