@@ -2,6 +2,8 @@
 
 Super simple filtering for ActiveRecord, inspired by [Justin Weiss' Gist](https://gist.github.com/justinweiss/9065666).
 
+[![Gem Version](https://badge.fury.io/rb/filta.svg)](https://badge.fury.io/rb/filta)
+
 <!-- MarkdownTOC -->
 
 - [Usage](#usage)
