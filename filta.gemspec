@@ -18,7 +18,8 @@ Gem::Specification.new do |s|
     "lib/**/*",
     "MIT-LICENSE",
     "Rakefile",
-    "README.md"
+    "README.md",
+    "VERSION"
   ]
 
   s.add_dependency "rails", "~> 5.0"
