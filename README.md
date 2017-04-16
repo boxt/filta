@@ -1,6 +1,6 @@
-# ActiveRecord Simple Filter
+# Filta
 
-A super simple lib for adding a filtering method to ActiveRecord, based on [Justin Weiss' Gist](https://gist.github.com/justinweiss/9065666).
+Super simple filtering for ActiveRecord, inspired by [Justin Weiss' Gist](https://gist.github.com/justinweiss/9065666).
 
 <!-- MarkdownTOC -->
 
@@ -13,14 +13,14 @@ A super simple lib for adding a filtering method to ActiveRecord, based on [Just
 
 ## Usage
 
-How to use my plugin.
+TBC
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ar-simple-filter'
+gem 'filta'
 ```
 
 And then execute:
@@ -32,12 +32,19 @@ $ bundle
 Or install it yourself as:
 
 ```bash
-$ gem install ar-simple-filter
+$ gem install filta
 ```
 
 ## Contributing
 
-Contribution directions go here.
+* Check out the latest master and/or develop branches to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
+* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
+* Fork the project
+* Start a feature/bugfix branch off of develop (using Git Flow approach)
+* Commit and push until you are happy with your contribution
+* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally
+* When you are done generate a pull request
+* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
 ## License
 
