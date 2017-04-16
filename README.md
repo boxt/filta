@@ -6,24 +6,19 @@ Super simple filtering for ActiveRecord, inspired by [Justin Weiss' Gist](https:
 
 <!-- MarkdownTOC -->
 
-- [Usage](#usage)
 - [Installation](#installation)
+- [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-- [TODO](#todo)
 
 <!-- /MarkdownTOC -->
-
-## Usage
-
-TBC
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'filta'
+gem "filta"
 ```
 
 And then execute:
@@ -37,6 +32,23 @@ Or install it yourself as:
 ```bash
 $ gem install filta
 ```
+
+## Usage
+
+Use like you would any other kind of ActiveRecord scope.
+
+```ruby
+@filtered = Klass.filter({ title: "Foo", something: "Bar" })
+```
+
+The `filter` method returns an ActiveRecord relation so you can chain the calls with other methods.
+
+```ruby
+Klass.filter({ title: "Foo" }).order("created_at DESC")
+```
+
+If using in a controller make sure you use the `params.permit` method to sanitise what you pass into the `filter` method.
+
 
 ## Contributing
 
@@ -52,7 +64,3 @@ $ gem install filta
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-## TODO
-
-* Finish README
