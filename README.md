@@ -3,7 +3,7 @@
 Super simple filtering for ActiveRecord, inspired by [Justin Weiss' Gist](https://gist.github.com/justinweiss/9065666).
 
 [![Gem Version](https://badge.fury.io/rb/filta.svg)](https://badge.fury.io/rb/filta)
-[![Build Status](https://secure.travis-ci.org/sleepingstu/filta.png)](http://travis-ci.org/sleepingstu/filta)
+[![Build Status](https://travis-ci.org/sleepingstu/filta.svg?branch=master)](https://travis-ci.org/sleepingstu/filta)
 
 <!-- MarkdownTOC -->
 
