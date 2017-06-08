@@ -10,7 +10,7 @@ module Filta
         results = self.where(nil)
 
         by.each do |key, value|
-          results = results.where("#{key} = ?", value) if value.present?
+          results = results.where("#{key}".to_sym => value) if value.present?
         end
 
         results

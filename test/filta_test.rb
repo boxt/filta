@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class Filta::Test < ActiveSupport::TestCase
 
@@ -17,18 +17,27 @@ class Filta::Test < ActiveSupport::TestCase
   describe "methods" do
     describe "#filter(by)" do
       before do
-        @found = Foo.create!(title: "Bar", slug: "bar")
-        @not_found1 = Foo.create!(title: "Bar", slug: "bar2")
-        @not_found2 = Foo.create!(title: "Baz", slug: "baz")
-
-        @foos = Foo.filter({ title: "Bar", slug: "bar" })
+        @foo1 = Foo.create!(title: "Bar", slug: "bar")
+        @foo2 = Foo.create!(title: "Bar", slug: "bar2")
+        @foo3 = Foo.create!(title: "Baz", slug: "baz")
       end
 
-      it "should return the foos" do
-        assert_equal 1, @foos.count
-        assert @foos.include?(@found)
-        refute @foos.include?(@not_found1)
-        refute @foos.include?(@not_found2)
+      it "should return the foos for title 'Bar'" do
+        foos = Foo.filter({ title: "Bar" })
+
+        assert_equal 2, foos.count
+        assert foos.include?(@foo1)
+        assert foos.include?(@foo2)
+        refute foos.include?(@foo3)
+      end
+
+      it "should return the foos for an array of ids" do
+        foos = Foo.filter({ id: [@foo1.id, @foo2.id] })
+
+        assert_equal 2, foos.count
+        assert foos.include?(@foo1)
+        assert foos.include?(@foo2)
+        refute foos.include?(@foo3)
       end
     end
   end
