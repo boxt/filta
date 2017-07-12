@@ -5,15 +5,6 @@ Super simple filtering for ActiveRecord, inspired by [Justin Weiss' Gist](https:
 [![Gem Version](https://badge.fury.io/rb/filta.svg)](https://badge.fury.io/rb/filta)
 [![Build Status](https://travis-ci.org/sleepingstu/filta.svg?branch=master)](https://travis-ci.org/sleepingstu/filta)
 
-<!-- MarkdownTOC -->
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-<!-- /MarkdownTOC -->
-
 ## Installation
 
 Add this line to your application's Gemfile:
