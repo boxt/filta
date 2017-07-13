@@ -4,6 +4,7 @@ module Filta
 
   ActiveSupport.on_load(:active_record) do
     include Filta::Methods
+    include Filta::Logging
   end
 
 end
