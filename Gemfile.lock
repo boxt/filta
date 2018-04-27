@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    filta (0.1.1)
+    filta (0.3.0)
       rails (~> 5.0)
 
 GEM
