@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 # Configure Rails Environment
 ENV["RAILS_ENV"] = "test"
 
-require File.expand_path("../../test/dummy/config/environment.rb", __FILE__)
+require File.expand_path("../test/dummy/config/environment.rb", __dir__)
 # ActiveRecord::Migrator.migrations_paths = [File.expand_path("../../test/dummy/db/migrate", __FILE__)]
 require "rails/test_help"
 require "minitest/autorun"
@@ -13,7 +15,9 @@ Minitest.backtrace_filter = Minitest::BacktraceFilter.new
 
 # Rails::TestUnitReporter.executable = 'bin/test'
 
-class ActiveSupport::TestCase
-  extend Minitest::Spec::DSL
-  extend WithModel
+module ActiveSupport
+  class TestCase
+    extend Minitest::Spec::DSL
+    extend WithModel
+  end
 end
