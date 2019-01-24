@@ -123,9 +123,9 @@ PLATFORMS
 
 DEPENDENCIES
   filta!
-  minitest (~> 5.0)
+  minitest (~> 5.11.3)
   sqlite3 (~> 1.3)
   with_model (~> 2.0)
 
 BUNDLED WITH
-   1.16.2
+   1.17.2

@@ -1,4 +1,3 @@
-
 # frozen_string_literal: true
 
 # rubocop:disable Styles/ExpandPathArguments
@@ -30,7 +29,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 5.0"
 
-  s.add_development_dependency "minitest", "~> 5.0"
+  s.add_development_dependency "minitest", "~> 5.11.3"
   s.add_development_dependency "sqlite3", "~> 1.3"
   s.add_development_dependency "with_model", "~> 2.0"
 end
