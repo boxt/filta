@@ -1,4 +1,9 @@
-$:.push File.expand_path("../lib", __FILE__)
+# frozen_string_literal: true
+
+# rubocop:disable Styles/ExpandPathArguments
+# NOTE: This is because of Gemfury failing with __dir__
+$LOAD_PATH.push File.expand_path("../lib", __FILE__)
+# rubocop:enable Styles/ExpandPathArguments
 
 # Maintain your gem's version:
 require "filta/version"
@@ -9,7 +14,7 @@ Gem::Specification.new do |s|
   s.version     = Filta::VERSION
   s.authors     = ["Stuart Chinery"]
   s.email       = ["stuart.chinery@gmail.com"]
-  s.homepage    = "https://github.com/sleepingstu/filta"
+  s.homepage    = "https://github.com/boxt/filta"
   s.summary     = "Super simple filtering for ActiveRecord"
   s.description = "Super simple filtering for ActiveRecord, inspired by Justin Weiss' Gist - https://gist.github.com/justinweiss/9065666"
   s.license     = "MIT"
@@ -24,7 +29,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 5.0"
 
-  s.add_development_dependency "minitest", "~> 5.0"
-  s.add_development_dependency "with_model", "~> 2.0"
+  s.add_development_dependency "minitest", "~> 5.11.3"
   s.add_development_dependency "sqlite3", "~> 1.3"
+  s.add_development_dependency "with_model", "~> 2.0"
 end
