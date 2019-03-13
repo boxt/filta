@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-# rubocop:disable Styles/ExpandPathArguments
+# rubocop:disable Style/ExpandPathArguments
 # NOTE: This is because of Gemfury failing with __dir__
 $LOAD_PATH.push File.expand_path("../lib", __FILE__)
-# rubocop:enable Styles/ExpandPathArguments
+# rubocop:enable Style/ExpandPathArguments
 
 # Maintain your gem's version:
 require "filta/version"
