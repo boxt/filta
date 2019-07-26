@@ -12,8 +12,8 @@ require "filta/version"
 Gem::Specification.new do |s|
   s.name        = "filta"
   s.version     = Filta::VERSION
-  s.authors     = ["Stuart Chinery"]
-  s.email       = ["stuart.chinery@gmail.com"]
+  s.authors     = ["Stuart Chinery", "Lorenzo Tello"]
+  s.email       = ["developers@boxt.co.uk"]
   s.homepage    = "https://github.com/boxt/filta"
   s.summary     = "Super simple filtering for ActiveRecord"
   s.description = "Super simple filtering for ActiveRecord, inspired by Justin Weiss' Gist - https://gist.github.com/justinweiss/9065666"
@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
     "VERSION"
   ]
 
-  s.add_dependency "rails", "~> 5.0"
+  s.add_dependency "rails", "~> 5.2"
 
   s.add_development_dependency "minitest", "~> 5.11.3"
   s.add_development_dependency "sqlite3", "~> 1.3"
