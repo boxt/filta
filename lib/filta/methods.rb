@@ -7,14 +7,21 @@ module Filta
     end
 
     module ClassMethods
-      def filter(by)
+      def filta(by)
         results = where(nil)
 
         by.each do |key, value|
-          results = results.where(key.to_s.to_sym => value) if value.present?
+          next unless value.present?
+
+          results = results.where(key.to_s.to_sym => value)
         end
 
         results
+      end
+
+      # TODO: This method is now deprecated and should be removed at a later date
+      def filter(by)
+        filta(by)
       end
     end
   end
