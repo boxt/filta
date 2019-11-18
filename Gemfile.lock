@@ -193,7 +193,7 @@ DEPENDENCIES
   boxt_ruby_style_guide (~> 2.1)
   bundler (~> 2.0)
   filta!
-  minitest (~> 5.11)
+  minitest (~> 5.13)
   minitest-bang (~> 1.0)
   minitest-fail-fast (~> 0.1)
   minitest-macos-notification (~> 0.1)
