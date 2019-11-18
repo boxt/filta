@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency"minitest", "~> 5.13"
   spec.add_development_dependency"minitest-bang", "~> 1.0"
   spec.add_development_dependency"minitest-fail-fast", "~> 0.1"
-  spec.add_development_dependency"minitest-macos-notification", "~> 0.1"
+  spec.add_development_dependency"minitest-macos-notification", "~> 0.2"
   spec.add_development_dependency"minitest-reporters", "~> 1.4"
   spec.add_development_dependency"rake", "~> 12.3"
   spec.add_development_dependency"simplecov", "~> 0.16"

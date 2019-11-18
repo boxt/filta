@@ -196,7 +196,7 @@ DEPENDENCIES
   minitest (~> 5.13)
   minitest-bang (~> 1.0)
   minitest-fail-fast (~> 0.1)
-  minitest-macos-notification (~> 0.1)
+  minitest-macos-notification (~> 0.2)
   minitest-reporters (~> 1.4)
   rake (~> 12.3)
   simplecov (~> 0.16)
