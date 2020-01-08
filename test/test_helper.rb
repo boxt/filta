@@ -16,7 +16,7 @@ require "with_model"
 
 Minitest::Reporters.use!(
   [
-    Minitest::Reporters::SpecReporter.new,
+    Minitest::Reporters::DefaultReporter.new,
     Minitest::Reporters::MacosNotificationReporter.new(title: "Filta gem")
   ],
   "test",
