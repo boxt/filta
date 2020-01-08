@@ -7,7 +7,7 @@ require "filta/version"
 Gem::Specification.new do |spec|
   spec.name = "filta"
   spec.version = Filta::VERSION
-  spec.authors = ["BoxtDevelopers"]
+  spec.authors = ["Boxt Developers"]
   spec.email = ["developers@boxt.co.uk"]
   spec.homepage = "https://github.com/boxt/filta"
   spec.summary = "Simple filtering for ActiveRecord"
