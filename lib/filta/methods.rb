@@ -11,17 +11,12 @@ module Filta
         results = where(nil)
 
         by.each do |key, value|
-          next unless value.present?
+          next if value.blank?
 
           results = results.where(key.to_s.to_sym => value)
         end
 
         results
-      end
-
-      # TODO: This method is now deprecated and should be removed at a later date
-      def filter(by)
-        filta(by)
       end
     end
   end
