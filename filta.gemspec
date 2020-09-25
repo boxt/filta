@@ -5,6 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "filta/version"
 
 Gem::Specification.new do |spec|
+  spec.required_ruby_version = ">= 2.5"
   spec.name = "filta"
   spec.version = Filta::VERSION
   spec.authors = ["Boxt Developers"]
@@ -24,14 +25,13 @@ Gem::Specification.new do |spec|
   ]
 
   spec.add_dependency "rails", ">= 5.2", "~> 6.0"
-  spec.add_development_dependency "boxt_ruby_style_guide", "~> 5.0"
+  # Lock style guide to specific version incase a new version is published with new breaking cops
+  spec.add_development_dependency "boxt_ruby_style_guide", "7.2.0"
   spec.add_development_dependency "bundler", "~> 2.1"
-  spec.add_development_dependency "minitest", "~> 5.14"
-  spec.add_development_dependency "minitest-bang", "~> 1.0"
-  spec.add_development_dependency "minitest-fail-fast", "~> 0.1"
-  spec.add_development_dependency "minitest-macos-notification", "~> 0.3"
-  spec.add_development_dependency "minitest-reporters", "~> 1.4"
   spec.add_development_dependency "rake", "~> 13.0"
+  spec.add_development_dependency "rspec", "~> 3.9"
+  spec.add_development_dependency "rspec-nc", "~> 0.3"
+  spec.add_development_dependency "rspec-rails", "~> 4.0"
   spec.add_development_dependency "simplecov", "~> 0.18"
   spec.add_development_dependency "sqlite3", "~> 1.3"
   spec.add_development_dependency "with_model", "~> 2.0"
