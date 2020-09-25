@@ -25,7 +25,8 @@ Gem::Specification.new do |spec|
   ]
 
   spec.add_dependency "rails", ">= 5.2", "~> 6.0"
-  spec.add_development_dependency "boxt_ruby_style_guide", "~> 7.1"
+  # Lock style guide to specific version incase a new version is published with new breaking cops
+  spec.add_development_dependency "boxt_ruby_style_guide", "7.2.0"
   spec.add_development_dependency "bundler", "~> 2.1"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.9"
