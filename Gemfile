@@ -2,15 +2,18 @@
 
 source "https://rubygems.org"
 
-# Declare your gem's dependencies in ar-simple-filter.gemspec.
-# Bundler will treat runtime dependencies like base dependencies, and
-# development dependencies will be added by default to the :development group.
 gemspec
 
-# Declare any dependencies that are still in development here instead of in
-# your gemspec. These might include edge Rails or gems from your path or
-# Git. Remember to move these dependencies to your gemspec before releasing
-# your gem to rubygems.org.
-
-# To use a debugger
-# gem 'byebug', group: [:development, :test]
+group :development do
+  # Lock style guide to specific version incase a new version is published with new breaking cops
+  gem "boxt_ruby_style_guide", "7.9.1"
+  gem "bundler", "~> 2.1"
+  gem "bundler-audit", "~> 0.7"
+  gem "rake", "~> 13.0"
+  gem "rspec", "~> 3.9"
+  gem "rspec-nc", "~> 0.3"
+  gem "rspec-rails", "~> 4.0"
+  gem "simplecov", "~> 0.18"
+  gem "sqlite3", "~> 1.3"
+  gem "with_model", "~> 2.0"
+end
