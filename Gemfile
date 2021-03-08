@@ -12,7 +12,7 @@ group :development do
   gem "rake", "~> 13.0"
   gem "rspec", "~> 3.9"
   gem "rspec-nc", "~> 0.3"
-  gem "rspec-rails", "~> 4.0"
+  gem "rspec-rails", "~> 4.1"
   gem "simplecov", "~> 0.18"
   gem "sqlite3", "~> 1.3"
   gem "with_model", "~> 2.0"
