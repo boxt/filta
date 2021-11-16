@@ -15,6 +15,9 @@ Gem::Specification.new do |spec|
   spec.description = "Simple filtering for ActiveRecord, inspired by Justin Weiss 'Gist - "\
                      "https://gist.github.com/justinweiss/9065666"
   spec.license = "MIT"
+  spec.metadata = {
+    "rubygems_mfa_required" => "true"
+  }
 
   spec.files = Dir[
     "lib/**/*",
