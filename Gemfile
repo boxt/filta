@@ -8,7 +8,6 @@ group :development do
   gem "boxt_ruby_style_guide", "~> 8.3"
   gem "rake", "~> 13.0"
   gem "rspec", "~> 3.9"
-  gem "rspec-nc", "~> 0.3"
   gem "rspec-rails", "~> 5.0", ">= 5.0.2"
   gem "simplecov", "~> 0.18"
   gem "sqlite3", "~> 1.3"
