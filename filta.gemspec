@@ -27,5 +27,5 @@ Gem::Specification.new do |spec|
     "VERSION"
   ]
 
-  spec.add_dependency "rails", ">= 5.2", "~> 6.0"
+  spec.add_dependency "rails", ">= 6", "< 8"
 end
