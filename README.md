@@ -3,10 +3,11 @@
 Super simple filtering for ActiveRecord, inspired by [Justin Weiss' Gist](https://gist.github.com/justinweiss/9065666).
 
 [![Gem Version](https://badge.fury.io/rb/filta.svg)](https://badge.fury.io/rb/filta)
-
+[![CI](https://github.com/boxt/filta/actions/workflows/ci.yml/badge.svg)](https://github.com/boxt/filta/actions/workflows/ci.yml)
 ## Requirements
 
-Requires Ruby 2.7.3 or above
+* Ruby 2.7.3 or above
+* Rails >= 6, < 8
 
 ## Installation
 
@@ -33,20 +34,17 @@ $ gem install filta
 Use like you would any other kind of ActiveRecord scope.
 
 ```ruby
-@filtered = Klass.filta({ title: "Foo", something: "Bar" })
+@filtered = Klass.filta(title: "Foo", something: "Bar")
+@filtered = Klass.filta({ title: "Foo", something: "Bar" }) # Can also use with hash
 ```
 
-The `filter` method returns an ActiveRecord relation so you can chain the calls with other methods.
+The `filta` method returns an ActiveRecord relation so you can chain the calls with other methods.
 
 ```ruby
-Klass.filta({ title: "Foo" }).order("created_at DESC")
+Klass.filta(title: "Foo").order("created_at DESC")
 ```
 
-If using in a controller make sure you use the `params.permit` method to sanitise what you pass into the `filter` method.
-
-## Notes
-
-The original `.filter` method is deprecated to avoid any confusion
+If using in a controller make sure you use the `params.permit` method to sanitize what you pass into the `filta` method.
 
 ## Contributing
 
