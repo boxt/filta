@@ -34,16 +34,17 @@ $ gem install filta
 Use like you would any other kind of ActiveRecord scope.
 
 ```ruby
-@filtered = Klass.filta({ title: "Foo", something: "Bar" })
+@filtered = Klass.filta(title: "Foo", something: "Bar")
+@filtered = Klass.filta({ title: "Foo", something: "Bar" }) # Can also use with hash
 ```
 
 The `filta` method returns an ActiveRecord relation so you can chain the calls with other methods.
 
 ```ruby
-Klass.filta({ title: "Foo" }).order("created_at DESC")
+Klass.filta(title: "Foo").order("created_at DESC")
 ```
 
-If using in a controller make sure you use the `params.permit` method to sanitize what you pass into the `filter` method.
+If using in a controller make sure you use the `params.permit` method to sanitize what you pass into the `filta` method.
 
 ## Contributing
 

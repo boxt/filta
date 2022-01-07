@@ -10,16 +10,20 @@ describe Filta do
   end
 
   describe ".filta" do
+    let!(:foo1) { Foo.create!(title: "Bar", slug: "bar") }
+    let!(:foo2) { Foo.create!(title: "Bar", slug: "bar2") }
+
     before do
       # Not returned
       Foo.create!(title: "Baz", slug: "baz")
     end
 
-    it "returns the foos for title 'Bar'" do
-      foo1 = Foo.create!(title: "Bar", slug: "bar")
-      foo2 = Foo.create!(title: "Bar", slug: "bar2")
-
+    it "returns the foo objects when searching with title: 'Bar'" do
       expect(Foo.filta(title: "Bar")).to contain_exactly(foo1, foo2)
+    end
+
+    it "returns the foo objects when searching with { slug: 'bar2' }" do
+      expect(Foo.filta({ slug: "bar2" })).to contain_exactly(foo2)
     end
   end
 end
