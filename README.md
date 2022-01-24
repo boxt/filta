@@ -6,7 +6,7 @@ Super simple filtering for ActiveRecord, inspired by [Justin Weiss' Gist](https:
 [![CI](https://github.com/boxt/filta/actions/workflows/ci.yml/badge.svg)](https://github.com/boxt/filta/actions/workflows/ci.yml)
 ## Requirements
 
-* Ruby 2.7.3 or above
+* Ruby >= 2.7
 * Rails >= 6, < 8
 
 ## Installation
