@@ -73,12 +73,12 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
     ast (2.4.2)
-    boxt_ruby_style_guide (9.2.0)
-      rubocop (= 1.25.0)
+    boxt_ruby_style_guide (9.2.1)
+      rubocop (= 1.25.1)
       rubocop-faker (= 1.1.0)
       rubocop-rails (= 2.13.2)
       rubocop-rake (= 0.6.0)
-      rubocop-rspec (= 2.7.0)
+      rubocop-rspec (= 2.8.0)
     builder (3.2.4)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
@@ -180,7 +180,7 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.10.3)
-    rubocop (1.25.0)
+    rubocop (1.25.1)
       parallel (~> 1.10)
       parser (>= 3.1.0.0)
       rainbow (>= 2.2.2, < 4.0)
@@ -200,7 +200,7 @@ GEM
       rubocop (>= 1.7.0, < 2.0)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (2.7.0)
+    rubocop-rspec (2.8.0)
       rubocop (~> 1.19)
     ruby-progressbar (1.11.0)
     simplecov (0.21.2)
@@ -227,7 +227,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  boxt_ruby_style_guide (= 9.2.0)
+  boxt_ruby_style_guide (= 9.2.1)
   filta!
   rake (~> 13.0)
   rspec (~> 3.9)
