@@ -7,7 +7,7 @@ gemspec
 group :development do
   gem "boxt_ruby_style_guide", "9.2.1"
   gem "rake", "~> 13.0"
-  gem "rspec", "~> 3.9"
+  gem "rspec", "~> 3.11"
   gem "rspec-rails", "~> 5.1"
   gem "simplecov", "~> 0.18"
   gem "sqlite3", "~> 1.3"
