@@ -22,7 +22,15 @@ describe Filta do
       expect(Foo.filta(title: "Bar")).to contain_exactly(foo1, foo2)
     end
 
-    it "returns the foo objects when searching with { slug: 'bar2' }" do
+    it "returns the foo objects when searching with title: 'Bar', slug: 'bar3'" do
+      expect(Foo.filta(title: "Bar", slug: "bar3")).to be_blank
+    end
+
+    it "returns the foo objects when searching with slug: 'bar'" do
+      expect(Foo.filta(slug: "bar")).to contain_exactly(foo1)
+    end
+
+    it "returns the foo objects when searching with a hash of { slug: 'bar2' }" do
       expect(Foo.filta({ slug: "bar2" })).to contain_exactly(foo2)
     end
   end
