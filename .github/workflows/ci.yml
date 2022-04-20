@@ -6,11 +6,11 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: "3.1.1"
+          ruby-version: "3.1.2"
       - run: bundle exec rubocop
   test:
     strategy:
@@ -18,7 +18,7 @@ jobs:
         ruby: [2.7, "3.0", 3.1]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
