@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe Filta do
+RSpec.describe Filta do
   with_model(:Foo) do
     table do |t|
       t.string(:title)
