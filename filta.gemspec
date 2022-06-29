@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.email = ["developers@boxt.co.uk"]
   spec.homepage = "https://github.com/boxt/filta"
   spec.summary = "Simple filtering for ActiveRecord"
-  spec.description = "Simple filtering for ActiveRecord, inspired by Justin Weiss 'Gist - "\
+  spec.description = "Simple filtering for ActiveRecord, inspired by Justin Weiss 'Gist - " \
                      "https://gist.github.com/justinweiss/9065666"
   spec.license = "MIT"
   spec.metadata = {
