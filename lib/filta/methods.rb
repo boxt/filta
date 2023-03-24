@@ -11,7 +11,7 @@ module Filta
         results = where(nil)
 
         by.each do |key, value|
-          next if value.blank?
+          next if value.to_s.blank?
 
           results = results.where(key.to_s.to_sym => value)
         end
