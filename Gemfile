@@ -11,5 +11,5 @@ group :development do
   gem "rspec-rails", "~> 6.0"
   gem "simplecov", "~> 0.22"
   gem "sqlite3", "~> 1.6"
-  gem "with_model", "~> 2.0"
+  gem "with_model", "~> 2.1"
 end
