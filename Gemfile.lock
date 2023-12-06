@@ -290,7 +290,7 @@ DEPENDENCIES
   rspec-rails (~> 6.0)
   simplecov (~> 0.22)
   sqlite3 (~> 1.6)
-  with_model (~> 2.0)
+  with_model (~> 2.1)
 
 BUNDLED WITH
    2.4.10
