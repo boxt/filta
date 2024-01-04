@@ -4,10 +4,11 @@ Super simple filtering for ActiveRecord, inspired by [Justin Weiss' Gist](https:
 
 [![Gem Version](https://badge.fury.io/rb/filta.svg)](https://badge.fury.io/rb/filta)
 [![CI](https://github.com/boxt/filta/actions/workflows/ci.yml/badge.svg)](https://github.com/boxt/filta/actions/workflows/ci.yml)
+
 ## Requirements
 
-* Ruby >= 2.7
-* Rails >= 6, < 8
+- Ruby >= 3.0
+- Rails >= 6, < 8
 
 ## Installation
 
