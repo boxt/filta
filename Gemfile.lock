@@ -84,7 +84,7 @@ GEM
     ast (2.4.2)
     base64 (0.2.0)
     bigdecimal (3.1.6)
-    boxt_rubocop (2.2.0)
+    boxt_rubocop (2.2.1)
       rubocop (= 1.60.1)
       rubocop-faker (= 1.1.0)
       rubocop-performance (= 1.20.2)
@@ -123,7 +123,7 @@ GEM
       net-smtp
     marcel (1.0.2)
     mini_mime (1.1.5)
-    minitest (5.21.2)
+    minitest (5.22.2)
     mutex_m (0.2.0)
     net-imap (0.4.9.1)
       date
@@ -284,7 +284,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  boxt_rubocop (= 2.2.0)
+  boxt_rubocop (= 2.2.1)
   filta!
   rake (~> 13.0)
   rspec (~> 3.13)
