@@ -10,6 +10,6 @@ group :development do
   gem "rspec", "~> 3.13"
   gem "rspec-rails", "~> 6.1"
   gem "simplecov", "~> 0.22"
-  gem "sqlite3", "~> 1.7"
+  gem "sqlite3", "~> 2.0"
   gem "with_model", "~> 2.1"
 end
