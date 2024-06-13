@@ -4,9 +4,11 @@ source "https://rubygems.org"
 
 gemspec
 
+# Work around for this issue: https://github.com/ruby/net-pop/issues/26
+gem "net-protocol", "~> 0.2"
+
 group :development do
   gem "boxt_rubocop", "2.7.0"
-  gem "net-protocol", "~> 0.2"
   gem "rake", "~> 13.2"
   gem "rspec", "~> 3.13"
   gem "rspec-rails", "~> 6.1"
