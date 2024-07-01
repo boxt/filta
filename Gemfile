@@ -10,7 +10,7 @@ gem "net-pop", github: "ruby/net-pop", tag: "v0.1.2"
 gemspec
 
 group :development do
-  gem "boxt_rubocop", "2.7.0"
+  gem "boxt_rubocop", "2.9.1"
   gem "rake", "~> 13.2"
   gem "rspec", "~> 3.13"
   gem "rspec-rails", "~> 6.1"
