@@ -8,7 +8,7 @@ group :development do
   gem "boxt_rubocop", "2.14.3"
   gem "rake", "~> 13.2"
   gem "rspec", "~> 3.13"
-  gem "rspec-rails", "~> 7.0"
+  gem "rspec-rails", "~> 7.1"
   gem "simplecov", "~> 0.22"
   gem "sqlite3", "~> 1.7"
   gem "with_model", "~> 2.1"
