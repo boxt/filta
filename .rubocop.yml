@@ -3,6 +3,10 @@ inherit_gem:
     - rails.yml
     - rspec.yml
 
+inherit_mode:
+  merge:
+    - Exclude
+
 require:
   - boxt_rubocop
   - rubocop-rake
@@ -10,7 +14,9 @@ require:
   - rubocop-rspec
 
 AllCops:
-  TargetRubyVersion: 3.0
+  TargetRubyVersion: 3.1
+  Exclude:
+    - gemfiles/**/*
 
 Style/FetchEnvVar:
   Exclude:
