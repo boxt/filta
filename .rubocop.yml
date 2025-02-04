@@ -12,6 +12,7 @@ require:
   - rubocop-rake
   - rubocop-rails
   - rubocop-rspec
+  - rubocop-rspec_rails
 
 AllCops:
   TargetRubyVersion: 3.1
