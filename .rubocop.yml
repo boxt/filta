@@ -9,6 +9,8 @@ inherit_mode:
 
 require:
   - boxt_rubocop
+
+plugins:
   - rubocop-rake
   - rubocop-rails
   - rubocop-rspec
