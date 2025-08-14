@@ -15,6 +15,7 @@
 appraise "activerecord-7" do
   gem "activerecord", "~> 7.0.0"
   gem "concurrent-ruby", "1.3.4"
+  gem "rspec-rails", "~> 7.0"
   gem "sqlite3", "~> 1.7"
   gem "zeitwerk", "~> 2.6.0"
   # Needed to test Ruby 3.4
@@ -25,6 +26,7 @@ end
 appraise "activerecord-7-1" do
   gem "activerecord", "~> 7.1.0"
   gem "concurrent-ruby", "1.3.4"
+  gem "rspec-rails", "~> 7.0"
   gem "sqlite3", "~> 1.7"
   gem "zeitwerk", "~> 2.6.0"
 end
@@ -32,6 +34,7 @@ end
 appraise "activerecord-7-2" do
   gem "activerecord", "~> 7.2.0"
   gem "concurrent-ruby", "1.3.4"
+  gem "rspec-rails", "~> 7.0"
   gem "sqlite3", "~> 1.7"
   gem "zeitwerk", "~> 2.6.0"
 end
