@@ -12,17 +12,6 @@
 #   }
 # end
 
-appraise "activerecord-7" do
-  gem "activerecord", "~> 7.0.0"
-  gem "concurrent-ruby", "1.3.4"
-  gem "rspec-rails", "~> 7.0"
-  gem "sqlite3", "~> 1.7"
-  gem "zeitwerk", "~> 2.6.0"
-  # Needed to test Ruby 3.4
-  gem "drb", "~> 2.2"
-  gem "mutex_m", "~> 0.3.0"
-end
-
 appraise "activerecord-7-1" do
   gem "activerecord", "~> 7.1.0"
   gem "concurrent-ruby", "1.3.4"

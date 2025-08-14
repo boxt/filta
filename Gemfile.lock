@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     filta (4.0.0)
-      rails (>= 7, < 9)
+      rails (>= 7.1.0, < 9)
 
 GEM
   remote: https://rubygems.org/
